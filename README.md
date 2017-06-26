@@ -36,11 +36,16 @@ Execute a Python program with:
 Your first task is to research Python to be able to understand some of its basic concepts. Edit this `README.md` file to answer the below questions:
 
 ##### What paradigms does Python support?
+Python is a multi-paradigm programming language: object-oriented programming and structured programming are fully supported, and many language features support functional programming and aspect-oriented programming (including by metaprogramming and metaobjects (magic methods)). Many other paradigms are supported via extensions, including design by contract and logic programming.
 
 ##### What typing discipline does it follow?
+Dynamic type checking is the process of verifying the type safety of a program at runtime. Implementations of dynamically type-checked languages generally associate each runtime object with a type tag (i.e., a reference to a type) containing its type information. This runtime type information (RTTI) can also be used to implement dynamic dispatch, late binding, downcasting, reflection, and similar features.
 
+Most type-safe languages include some form of dynamic type checking, even if they also have a static type checker.[citation needed] The reason for this is that many useful features or properties are difficult or impossible to verify statically. For example, suppose that a program defines two types, A and B, where B is a subtype of A. If the program tries to convert a value of type A to type B, which is known as downcasting, then the operation is legal only if the value being converted is actually a value of type B. Thus, a dynamic check is needed to verify that the operation is safe. This requirement is one of the criticisms of downcasting.
+
+By definition, dynamic type checking may cause a program to fail at runtime. In some programming languages, it is possible to anticipate and recover from these failures. In others, type-checking errors are considered fatal.
 ##### Is it a high or low level language?
-
+High level
 ##### Does it have built in memory management and garbage collection?
 
 ##### What languages was Python influenced by?
